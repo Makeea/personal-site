@@ -84,12 +84,19 @@ pre {
 
 .icon-link {
     display: inline-block;
+    border-radius: 5px;
+    padding: 0.25em;
+    transition: background-color ease-in 0.25s;
+}
+
+.icon-link:hover {
+    background-color: var(--background-highlight);
+    transition: background-color ease-in 0.25s;
 }
 
 .icon-link > img {
-    height: 40px;
+    height: 50px;
     width: auto;
-    margin: 1.5em;
 }
 
 .link-tree {
@@ -97,6 +104,7 @@ pre {
     list-style: none;
     justify-content: space-around;
     grid-area: links;
+    flex-wrap: wrap;
 }
 
 .link-tree > li {
@@ -156,6 +164,12 @@ pre {
     height: 3em;
     border: 1px solid var(--text-background);
     border-radius: 5px;
+    transition: background-color ease-in 0.25s;
+}
+
+.main-nav li:hover {
+    background-color: var(--background-highlight);
+    transition: background-color ease-in 0.25s;
 }
 
 .main-nav a {
@@ -224,11 +238,6 @@ pre {
         width: 90%;
         margin: 0.5em 0;
     }
-
-    .link-tree {
-        flex-flow: row;
-    }
-
 }
 
 @media screen and (min-width: 1025px) {
